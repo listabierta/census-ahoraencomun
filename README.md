@@ -1,9 +1,7 @@
-# Participa's Census
-Census app for Participa website based in Listabierta municipales 2015
+# AhoraEnComun's Census
+Census app for AhoraEnComun website based in Listabierta municipales 2015
 
-== Participa's Census ==
-
-La lista abierta para municipales 2015.
+== AhoraEnComun's Census ==
 
 == Install ==
 
@@ -35,17 +33,7 @@ You can load the base fixtures with:
 
     $ php app/console doctrine:fixtures:load
 
-If you need the raw SQL queries you can load with the following commands:
-
-    $ cat src/Listabierta/Bundle/MunicipalesBundle/Resources/fixtures/provinces_spain.sql | mysql listabierta
-    $ cat src/Listabierta/Bundle/MunicipalesBundle/Resources/fixtures/municipalities_spain.sql | mysql listabierta
-    
 == Third parties ==
-
-* Tractis TSA
-    
-    This project use Tractis TSA (https://www.tractis.com/home/webservices/tsa) to cipher vote results. You will need
-    create an API key here: https://www.tractis.com/webservices/tsa/apikeys
 
 * SMS inbound
     
@@ -63,8 +51,8 @@ For use capifony in Ubuntu you will need install the following dependencies
 
 Then you can clone the repository with:
 
-    # git clone https://github.com/listabierta/municipales2015.git
-    # cd municipales2015
+    # git clone https://github.com/listabierta/census-ahoraencomun.git
+    # cd census-ahoraencomun
     
 Then perform a cold installation:
 
