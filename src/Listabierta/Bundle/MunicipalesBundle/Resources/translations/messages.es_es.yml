@@ -5,28 +5,29 @@ census:
     step_4: Verifica tu número de móvil 
     step_5: Fin
     
-    html_title: Inscripción en el censo de votantes de Participa Sevilla
-    h1_title: Inscripción en el censo de votantes de Participa Sevilla
+    html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
+    h1_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
     verify_msg: Confirma el registro y las condiciones enviando desde tu móvil un SMS con la palabra ACEPTO al número %sms_inbound_number%, después haz clic en CONTINUAR
     verify_extra: El coste del mensaje es de unos 10 céntimos de euro (o gratis, depende del coste de tu operadora) no es un sms premium y listabierta.org no cobra por este servicio.
     
     step_conditions:
-      html_title: Inscripción en el censo de votantes de Participa Sevilla
-      h1_title: Acepta las condiciones de registro para el censo de votantes de Participa Sevilla
-      step_h2: "Paso 1: Inscripción en el censo de votantes de Participa Sevilla" 
+      html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
+      h1_title: Acepta las condiciones de registro
+      step_h2: "Paso 1: Inscripción en el censo de la asamblea virtual de Ahora en Común" 
     
       p1_title: Condiciones de registro
-      p1_content: Que has apoyado con tu voto la candidatura municipalista de Participa Sevilla, o que, una vez conocida la candidatura, apoyas sus principios programáticos cuyos ejes principales son: rescate ciudadano, solución a la emergencia habitacional, promoción del empleo local, auditoría de las cuentas y contratos municipales, democracia y presupuestos participativos, gestión transparente, economía social y sostenibilidad medioambiental, puedes ver el programa completo de la candidatura <a href="https://participasevilla.org/?page_id=17178" title="Programa completo de la candidatura">aquí</a>
-      p2_content: Que aceptas de forma expresa que eventualmente pueda ser publicado tu nombre y apellidos en apoyo a dichos principios.
-      p3_content: Que mediante el acto de registro estás dando tu consentimiento expreso al tratamiento de los datos personales que aportas, según lo dispuesto en el artículo 6 de la LOPD y que podrás ejercer tus derechos en los términos dispuestos por el artículo 5 de la LOPD.
-      p4_content: Que resides en el municipio de Sevilla (se verificará en el siguiente paso del registro).
-      p5_content: Que la información que aportas durante el registro es cierta.
+      p1_content: Que quieres apoyar con tu voto en las próximas elecciones generales una candidatura de unidad popular que aprende y se enriquece de los procesos de confluencia ciudadana de las recientes elecciones municipales y que se denomina de forma provisional “Ahora en Común”.
+      p2_content: "Que suscribes sus principios programáticos que son: rescate ciudadano, inicio de un proceso constituyente, solución a la emergencia habitacional, promoción del empleo de calidad, fomento de la democracia participativa vinculante, gestión transparente, economía más social por el bien común y los cuidados, fomento de las energías renovables y sostenibilidad medioambiental."
+      p3_content: Que deseas formar parte de la asamblea virtual de esta candidatura de unidad popular que tomará todas las decisiones relevantes durante el proceso de construcción de la candidatura. Una persona, un voto.
+      p4_content: Que apruebas un sistema de selección de candidatos y candidatas por circunscripción provincial, con un sistema de voto ponderado, evitando la elección por listas completas o preconfiguradas.
+      p5_content: Que mediante el acto de registro estás dando tu consentimiento expreso al tratamiento de los datos personales que aportas, según lo dispuesto en el artículo 6 de la LOPD y que podrás ejercer tus derechos en los términos dispuestos por el artículo 5 de la LOPD.
+      p6_content: Que la información que aportas durante el registro es cierta.
       accept: ACEPTAS ESTAS CONDICIONES
       continue: <i class="ace-icon fa fa-check bigger-110"></i> Continuar
       
     step3:
-        step_h2: Paso 3 Inscripción en el censo de votantes de Participa Sevilla
-        html_title: Inscripción en el censo de votantes de Participa Sevilla
+        step_h2: Paso 3 Inscripción en el censo de la asamblea virtual de Ahora en Común
+        html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
         h1_title: Aporta tus datos personales
         name: Nombre 
         lastname: Apellidos
@@ -42,21 +43,22 @@ census:
         phone_info: Deberás confirmarlo con un mensaje en el siguiente paso, si introduces un número incorrecto, no podrás continuar
         warning_text: <b>Atención</b>: es imprescindible que introduzcas los datos de registro de forma correcta, incluyendo tu número de móvil.
     step_verify:
-        html_title: Inscripción en el censo de votantes de Participa Sevilla
+        html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
         h1_title: Verifica tu número de móvil
         continue: Continuar <i class="mine-icon fa fa-arrow-right icon-on-right"></i>
         previous: Anterior
         
     step2:
-        step_h2: Paso 2 Inscripción en el censo de votantes de Participa Sevilla
-        html_title: Inscripción en el censo de votantes de Participa Sevilla
+        step_h2: Paso 2 Inscripción en el censo de la asamblea virtual de Ahora en Común
+        html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
         h1_title: Acepta la localización
         continue: Continuar <i class="mine-icon fa fa-arrow-right icon-on-right"></i>
         previous: Anterior
+        p1_content: Necesitamos que aceptes que el navegador determine  tu ubicación para poder darte de alta en el censo de votantes de la asamblea virtual de Ahora en Común, si no la aceptas, no podrás continuar con el registro.<br />Esta información solo se utiliza para verificar la provincia desde la que haces el registro, que será tu provincia asignada para el voto, por favor, si estás de viaje y quieres que tu voto cuente en tu provincia, inscribete a tu regreso. <br />En el siguiente paso, deberás “permitir” la ubicación de tu ordenador para continuar con el registro. Te aparecerá un mensaje similar al siguiente.
                       
     step3:
-        step_h2: Paso 3 Inscripción en el censo de votantes de Participa Sevilla
-        html_title: Inscripción en el censo de votantes de Participa Sevilla
+        step_h2: Paso 3 Inscripción en el censo de la asamblea virtual de Ahora en Común
+        html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
         h1_title: Establece los plazos de presentación de candidaturas
         continue: Continuar <i class="mine-icon fa fa-arrow-right icon-on-right"></i>
         explanation_date: Plazo de presentación de candidaturas <br/>(mínimo 2 días) 
@@ -65,17 +67,17 @@ census:
         previous: Anterior
               
     step4:
-        step_h2: Paso 4 Inscripción en el censo de votantes de Participa Sevilla
-        html_title: Inscripción en el censo de votantes de Participa Sevilla
+        step_h2: Paso 4 Inscripción en el censo de la asamblea virtual de Ahora en Común
+        html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
         h1_title: Verifica tu número de móvil
         continue: Continuar <i class="mine-icon fa fa-arrow-right icon-on-right"></i>
         previous: Anterior
 
     step5:
-        step_h2: Paso 5 Inscripción en el censo de votantes de Participa Sevilla
-        html_title: Inscripción en el censo de votantes de Participa Sevilla
+        step_h2: Paso 5 Inscripción en el censo de la asamblea virtual de Ahora en Común
+        html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
         h1_title:  Registro finalizado con éxito
-        p1: Gracias por registrarte en el censo de votantes de Participa Sevilla!
+        p1: Gracias por registrarte en el censo de votantes de Ahora en Común!
         p2: Vamos a construir colectivamente otra forma de gestionar tu ayuntamiento por el bien común de sus habitantes.
 
     change_password:
@@ -99,7 +101,7 @@ mail:
         verify: ha sido verificado correctamente       
         
     census_confirmation:
-        message: Te has inscrito correctamente en el censo de Participa Sevilla, gracias por participar, por favor envía a gente el enlace www.participasevilla.org para contribuir a esta construcción colectiva.
+        message: Te has inscrito correctamente en el censo de Ahora en Común, gracias por participar, por favor envía a gente el enlace www.participasevilla.org para contribuir a esta construcción colectiva.
 
 forms:
     census_step1:
