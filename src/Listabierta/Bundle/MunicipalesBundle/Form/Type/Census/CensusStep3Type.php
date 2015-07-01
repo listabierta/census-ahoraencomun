@@ -68,6 +68,11 @@ class CensusStep3Type extends AbstractType
 	
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
+    	$resolver->setDefaults(
+    			array(
+    					'allow_extra_fields' => true
+    			)
+    	);
     }
 
     public function getName()
