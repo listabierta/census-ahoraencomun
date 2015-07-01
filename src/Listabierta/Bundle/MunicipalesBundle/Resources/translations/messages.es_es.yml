@@ -77,8 +77,8 @@ census:
         step_h2: Paso 5 Inscripción en el censo de la asamblea virtual de Ahora en Común
         html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
         h1_title:  Registro finalizado con éxito
-        p1: Gracias por registrarte en el censo de votantes de Ahora en Común!
-        p2: Vamos a construir colectivamente otra forma de gestionar tu ayuntamiento por el bien común de sus habitantes.
+        p1: Gracias por registrarte en el censo de votantes de la asamblea virtual de Ahora en Común
+        p2: Vamos a construir colectivamente otra forma de gobernar por el bien común, por favor difunde esta iniciativa
 
     change_password:
         h1_title: Cambiar contraseña 
