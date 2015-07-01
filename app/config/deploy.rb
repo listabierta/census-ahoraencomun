@@ -1,10 +1,11 @@
-set :application, "municipales2015.listabierta.org"
-set :deploy_user, "muni"
+set :application, "censo.ahoraencomun.info"
+set :deploy_user, "censusaec"
 set :domain,      "#{application}"
 set :deploy_to,   "/home/#{deploy_user}/public"
 set :app_path,    "app"
 
-set :repository,  "git@github.com:listabierta/municipales2015.git"
+# git@github.com:listabierta/census-ahoraencomun.git
+set :repository,  "/root/censo.ahoraencomun.info.git"
 set :scm,         :git
 
 set :model_manager, "doctrine"
