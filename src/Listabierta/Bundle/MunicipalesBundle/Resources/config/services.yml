@@ -1,6 +1,0 @@
-services:
-    municipales.locale_listener:
-        class: Listabierta\Bundle\MunicipalesBundle\EventListener\LocaleListener
-        arguments: ["%kernel.default_locale%"]
-        tags:
-            - { name: kernel.event_subscriber }
