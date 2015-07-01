@@ -57,5 +57,20 @@ Listabierta\Bundle\MunicipalesBundle\Entity\CensusUser:
             length: 255
             nullable: TRUE 
             column: province_longitude    
+       
+        created_time:
+            type: datetime
+            columnDefinition: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    
+    actAs:
+        Timestampable:
+          created:
+            name: created_time
+          updated:
+            disabled: true
+    columns:
+        created_time:
+          type: timestamp
+          notnull: true
         
     lifecycleCallbacks: {  }

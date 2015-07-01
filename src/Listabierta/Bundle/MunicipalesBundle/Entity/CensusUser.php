@@ -307,4 +307,33 @@ class CensusUser
     {
         return $this->provinceLongitude;
     }
+    /**
+     * @var \DateTime
+     */
+    private $created_time;
+
+
+    /**
+     * Set createdTime
+     *
+     * @param \DateTime $createdTime
+     *
+     * @return CensusUser
+     */
+    public function setCreatedTime($createdTime)
+    {
+        $this->created_time = $createdTime;
+
+        return $this;
+    }
+
+    /**
+     * Get createdTime
+     *
+     * @return \DateTime
+     */
+    public function getCreatedTime()
+    {
+        return $this->created_time;
+    }
 }
