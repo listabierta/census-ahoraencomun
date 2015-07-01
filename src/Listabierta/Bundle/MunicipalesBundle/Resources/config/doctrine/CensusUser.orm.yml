@@ -34,5 +34,28 @@ Listabierta\Bundle\MunicipalesBundle\Entity\CensusUser:
             type: string
             length: 255
             nullable: TRUE
+            
+        token:
+            type: string
+            length: 255
+            nullable: TRUE
+    
+        provinceGeolocation:
+            type: string
+            length: 255
+            nullable: TRUE 
+            column: province_geolocation                      
+ 
+        provinceLatitude:
+            type: string
+            length: 255
+            nullable: TRUE 
+            column: province_latitude
+                  
+        provinceLongitude:
+            type: string
+            length: 255
+            nullable: TRUE 
+            column: province_longitude    
         
     lifecycleCallbacks: {  }
