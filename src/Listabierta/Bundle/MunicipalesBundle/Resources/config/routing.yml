@@ -33,14 +33,6 @@ census_step5:
     defaults: { _controller: MunicipalesBundle:Census:step5Finish }
     requirements:
         _locale: es_es|es_eu|es_gl|es_gl
- 
-# Ajax requests
-
-ajax_get_municipalities_list:
-    path:     /ajax/get-municipalities-list/{province_id}
-    defaults: { _controller: MunicipalesBundle:Ajax:getMunicipalities }
-    requirements:
-        _locale: es_es|es_eu|es_gl|es_gl
 
 # http://municipales2015.listabierta.org./sms/inbound   
 municipales_sms_inbound_callback:
@@ -51,56 +43,3 @@ municipales_sms_inbound_callback:
 municipales_sms_callback:
     path:     /sms/callback
     defaults: { _controller: MunicipalesBundle:SMSInbound:callback }
-    
-login:
-    pattern:   /login
-    defaults:  { _controller: MunicipalesBundle:Security:login }
-login_check:
-    pattern:   /login_check
-    
-admin_logout:
-    pattern:   /logout
-
-recover_password:
-    path:     /recover_password
-    defaults: { _controller: MunicipalesBundle:Census:recoverPassword }
-    requirements:
-        _locale: es_es|es_eu|es_gl|es_gl
-        
-recovery_token:
-    path:     /recovery/{token}
-    defaults: { _controller: MunicipalesBundle:Census:recoveryToken }
-    requirements:
-        _locale: es_es|es_eu|es_gl|es_gl
-        
-# Consultation
-
-consultation_step1:
-    path:     /consulta-ciudadana/{token}
-    defaults: { _controller: MunicipalesBundle:Consultation:step1 }
-    requirements:
-        _locale: es_es
-        
-consultation_step2:
-    path:     /consulta-ciudadana-paso-2/{token}
-    defaults: { _controller: MunicipalesBundle:Consultation:step2 }
-    requirements:
-        _locale: es_es
-        
-consultation_step3:
-    path:     /consulta-ciudadana-paso-3/{token}
-    defaults: { _controller: MunicipalesBundle:Consultation:step3 }
-    requirements:
-        _locale: es_es
-
-consultation_results:
-    path:     /consulta-ciudadana-resultados
-    defaults: { _controller: MunicipalesBundle:Consultation:results }
-    requirements:
-        _locale: es_es
-                
-consultation_download_csv:
-    path:     /consulta-ciudadana-descarga-csv
-    defaults: { _controller: MunicipalesBundle:Consultation:downloadCSV }
-    requirements:
-        _locale: es_es
