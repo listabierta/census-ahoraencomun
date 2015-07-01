@@ -151,7 +151,12 @@ class CensusController extends Controller
     		$email    = $form['email']->getData();
     		$phone    = $form['phone']->getData();
 
+    		$extra    = $form->getExtraData();
     		
+    		$province_geolocation = $extra['province_geolocation'];
+    		$province_latitude    = $extra['province_latitude'];
+    		$province_longitude   = $extra['province_longitude'];
+
     		$census_user_repository = $entity_manager->getRepository('Listabierta\Bundle\MunicipalesBundle\Entity\CensusUser');
     		
     		$census_user_dni = $census_user_repository->findOneBy(array('dni' => $dni));
@@ -191,6 +196,9 @@ class CensusController extends Controller
     			$census_user->setDni($dni);
     			$census_user->setEmail($email);
     			$census_user->setPhone($phone);
+    			$census_user->setProvinceGeolocation($province_geolocation);
+    			$census_user->setProvinceLatitude($province_latitude);
+    			$census_user->setProvinceLongitude($province_longitude);
 
     			$entity_manager->persist($census_user);
     			$entity_manager->flush();
@@ -220,6 +228,9 @@ class CensusController extends Controller
 	    		$session->set('email', $email);
 	    		$session->set('phone', $phone);
 	    		$session->set('token', $token);
+	    		$session->set('province_geolocation', $province_geolocation);
+	    		$session->set('province_latitude', $province_latitude);
+	    		$session->set('province_longitude', $province_longitude);
 	    		
 				return $this->step4VerifyAction($request);
     		}
@@ -322,6 +333,8 @@ class CensusController extends Controller
 	    		
 	    	$this->get('mailer')->send($message);
 	    	
+	    	
+	    	/*
 	    	$census_token = $session->get('token', NULL);
 	    	
 	    	if(!empty($census_token))
@@ -342,6 +355,7 @@ class CensusController extends Controller
 		    	
 		    	$this->get('mailer')->send($message);
 	    	}
+	    	*/
     	}
     	
     	return $this->render('MunicipalesBundle:Census:step5_finish.html.twig', array());
