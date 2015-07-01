@@ -1,51 +1,3 @@
-header:
-    languages:
-        es_eu: Euskera
-        es_ca: Català
-        es_gl: Galego
-        es_es: Español
-
-consultation:
-    step_1: Preguntas
-    step_2: Confirmar respuestas
-    step_3: Fin
-    
-    step1:
-        step_h2: Paso 1 Asamblea Ciudadana de Participa Sevilla, Consulta sobre la investidura del nuevo alcalde de Sevilla
-        html_title: Preguntas
-        h1_title: Preguntas
-        
-        first_question_intro_text: 'El 13 de Junio se elige el alcalde de Sevilla. Las elecciones municipales celebradas el pasado 24 de Mayo posibilitan que los candidatos de las dos listas, más votadas, Juan Ignacio Zoido y Juan Espadas, puedan acceder a la alcaldía.<br />Participa Sevilla ha mantenido un dialogo con todos los partidos con representantes en el ayuntamiento y como consecuencia de estas conversaciones se ha obtenido el compromiso por parte del PSOE de desarrollar <a href="https://participasevilla.org/?page_id=17612" title="80 medidas de nuestro Decálogo Ciudadano">80 medidas de nuestro Decálogo Ciudadano</a>.'
-        first_question_header: "Con esta información, responde a las siguientes preguntas:"
-        first_question: ¿Que consideras que deben votar nuestros concejales?
-        first_question_option_A: A - Votarnos a nosotros mismos o abstenernos, con la probable consecuencia de que Juan Ignacio Zoido (PP) sea alcalde
-        first_question_option_B: B - Apoyar la investidura de Juan Espadas (PSOE) y exigirle el cumplimiento de estos compromisos
-        
-        second_question_intro_text: ""
-        second_question_header: "Elige una de las opciones:"
-        second_question: ""
-        second_question_option_A: A - Votar la investidura de Juan Espadas y pasar a la oposición
-        second_question_option_B: B - Votar la investidura de Juan Espadas y formar parte del gobierno
-        continue: Continuar <i class="mine-icon fa fa-arrow-right icon-on-right"></i>
-        
-    step2:
-        step_h2: Paso 2 Asamblea Ciudadana de Participa Sevilla, Consulta sobre la investidura del nuevo alcalde de Sevilla
-        html_title: Confirmar respuestas
-        h1_title: Confirmar respuestas
-        p1: ¿Estás seguro? Esto has elegido
-        previous: Anterior
-        continue: Votar <i class="mine-icon fa fa-arrow-right icon-on-right"></i>
-    
-    step3:
-        step_h2: Paso 3 Asamblea Ciudadana de Participa Sevilla, Consulta sobre la investidura del nuevo alcalde de Sevilla
-        html_title: Fin
-        h1_title: Fin
-        p1: Gracias por participar, Participa Sevilla es una herramienta de construcción colectiva.
-        p2: Te enviaremos un correo con los resultados de la votación y el sistema de verificación de los resultados
-        
-    error:
-        html_title: Error
-        
 census:
     step_1: Acepta las condiciones
     step_2: Acepta la localización
@@ -141,36 +93,7 @@ census:
         continue: Recuperar <i class="mine-icon fa fa-arrow-right icon-on-right"></i>
         explanation: Si has olvidado tu nombre de usuario o tu contraseña, puedes solicitar que el envío por correo electrónico de tu nombre de usuario y restablecer tu contraseña. Si introduces el correo electrónico que has registrado, se enviará las instrucciones para restablecer tu contraseña
 
-
-login:
-    html_title: Login
-    username: Usuario
-    password: Contraseña
-    access: Acceder
-    remember_me: Recordar mis datos
-    conditions: Accede con tus credenciales de usuario y contraseña
-    recover_password: ¿Olvidaste tu contraseña?
-    
 mail:
-    new_recover_data:
-        hello: Hola
-        details: Los detalles de acceso nuevos generados para su cuenta son
-        user: Usuario
-        password: Contraseña
-        email: Correo electrónico
-        regards: Saludos
-        admin_zone: zona de acceso de administrador
-        you_can_access: Ahora puede acceder con estos nuevos datos desde la zona de acceso de administrador
-        
-    recovery_password:
-        hello: Hola
-        request: Usted o alguien ha solicitado restablecer la contraseña de su cuenta porque parece haber olvidado la contraseña
-        no_request: Si no ha solicitado esto, por favor ignórelo. La recuperación expirará y se volverá inutilizable en 24 horas
-        restore: Para restablecer tu contraseña, por favor visite la siguiente página
-        data_recover: Recuperación datos
-        visit: Cuando visite la página, su contraseña será restablecida, y la nueva contraseña se le enviará a usted por correo
-        regards: Saludos
-        
     sms_inbound_verification:
         your_phone: Tu teléfono
         verify: ha sido verificado correctamente       
