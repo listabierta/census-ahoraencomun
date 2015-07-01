@@ -19,7 +19,7 @@
 						if(error.code == error.PERMISSION_DENIED) 
 						{
 							msg_error = 'Has rechazado permitir la detección geográfica de tu ubicación mediante el navegador, ' +
-								        'en consecuencia no podemos verificar que te encuentres en Sevilla y poder permitirte ' + 
+								        'en consecuencia no podemos verificar que te encuentres en una provincia y poder permitirte ' + 
 								        'realizar la votación. Si aún deseas proceder, debes cambiar la configuración a Permitir, ' +
 								        'por ejemplo en Google Chrome desde ' +
 								        'Configuración avanzada > Privacidad > Configuración de contenido > Excepciones de ubicación geográfica' +
@@ -68,14 +68,15 @@
 						navigator.geolocation.getCurrentPosition(
 							function(position) 
 							{
-								  var geo_msg = 'Tiempo: ' + position.timestamp + ' <br/>Latitud: ' + position.coords.latitude + ' <br/>Longitud: ' + position.coords.longitude + 
+								 /* var geo_msg = 'Tiempo: ' + position.timestamp + ' <br/>Latitud: ' + position.coords.latitude + ' <br/>Longitud: ' + position.coords.longitude + 
 										  	  ' <br/>Altitud: ' + position.coords.altitude +
 										  	  ' <br/>Precision: ' + position.coords.accuracy +
 										  	  ' <br/>Precision altitud: ' +  position.coords.altitudeAccuracy +
 										  	  ' <br/>Heading: ' +  position.coords.heading +
 										  	  ' <br/>Speed: ' +  position.coords.speed
-										  	  
-								 console.log(geo_msg);
+								*/
+							    var geo_msg = '';
+								 //console.log(geo_msg);
 								  
 								  
 								var img = new Image();
@@ -94,28 +95,41 @@
 									if(data && data.status && data.status == 'OK')
 									{
 										var len = data.results[0].address_components.length;
-										var data_city;
+										var data_province;
+
+										console.log(data.results[5].address_components[0])
+										data_province = data.results[5].address_components[0].long_name;
+										/*
 										for(var i = 0; i < len; i++ ) 
 										{
-											console.log(data.results[0].address_components[i].short_name)
-										    if(data.results[0].address_components[i].short_name == 'Sevilla' ) 
-											{
-										    	data_city = data.results[0].address_components[i].short_name;
-										        break;
-										    }
+											console.log(data.results[5].address_components[i])
+											//.long_name
+										    //if(data.results[0].address_components[i].short_name == 'Sevilla' ) 
+											//{
+										    	data_province = data.results[5].address_components[i].long_name;
+										    	
+										        //break;
+										    //}
 										}
-
-										if(data_city == 'Sevilla')
+										*/
+										console.log(data_province)
+										
+										if(data_province) //  == 'Sevilla'
 										{
+											geo_msg = 'Provincia: ' + data_province + '<br />'
+											
 											$("#live-geolocation").html(geo_msg);
 											$("#live-geolocation").append(img);
+											$("#province_geolocation").val(data_province)
+											$("#province_latitude").val(position.coords.latitude)
+											$("#province_longitude").val(position.coords.longitude)
 											
 											$('#geolocation_content').css('display', 'block');
 											$('#wizard-actions-box').css('display', 'block');
 										}
 										else
 										{
-											var msg_error = 'No se ha detectado una ubicación cercana a Sevilla. Registro de censo no permitido';
+											var msg_error = 'No se ha detectado una ubicación cercana a una provincia española. Registro de censo no permitido';
 											
 											//alert(msg_error);
 											$('#geolocation_content').css('display', 'none');
@@ -309,16 +323,20 @@
                   </div>
                 </div>
 
-                <div id="wizard-actions-box" style="display:none">
-	                <hr>
-	                <div class="wizard-actions">
-	                  <button class="btn btn-prev" onclick="location.href='{{ path('census_step2') }}'; return false;">
-	                    <i class="mine-icon fa fa-arrow-left"></i>
-	                    {{ 'census.step3.previous'|trans }}
-	                  </button>
-	                  
-	                  {{ form_widget(form.continue, { 'label': 'census.step3.continue'|trans|raw, 'attr' : { 'class' : 'submit btn btn-success btn-next'} }) }}
-	                  
+                	<div id="wizard-actions-box" style="display:none">
+		                <hr>
+		                <div class="wizard-actions">
+		                  <button class="btn btn-prev" onclick="location.href='{{ path('census_step2') }}'; return false;">
+		                    <i class="mine-icon fa fa-arrow-left"></i>
+		                    {{ 'census.step3.previous'|trans }}
+		                  </button>
+		                  
+		                  <input id="province_geolocation" type="hidden" name="census_step3[province_geolocation]" value="" />
+		                  <input id="province_latitude" type="hidden" name="census_step3[province_latitude]" value="" />
+		                  <input id="province_longitude" type="hidden" name="census_step3[province_longitude]" value="" />
+		                
+		                  {{ form_widget(form.continue, { 'label': 'census.step3.continue'|trans|raw, 'attr' : { 'class' : 'submit btn btn-success btn-next'} }) }}
+	                  	</div>
 	                </div>
                 </div>
               </div>
