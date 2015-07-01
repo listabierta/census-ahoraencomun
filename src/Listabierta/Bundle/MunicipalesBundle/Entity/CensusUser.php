@@ -220,4 +220,91 @@ class CensusUser
     {
         return $this->token;
     }
+    /**
+     * @var string
+     */
+    private $provinceGeolocation;
+
+    /**
+     * @var string
+     */
+    private $provinceLatitude;
+
+    /**
+     * @var string
+     */
+    private $provinceLongitude;
+
+
+    /**
+     * Set provinceGeolocation
+     *
+     * @param string $provinceGeolocation
+     *
+     * @return CensusUser
+     */
+    public function setProvinceGeolocation($provinceGeolocation)
+    {
+        $this->provinceGeolocation = $provinceGeolocation;
+
+        return $this;
+    }
+
+    /**
+     * Get provinceGeolocation
+     *
+     * @return string
+     */
+    public function getProvinceGeolocation()
+    {
+        return $this->provinceGeolocation;
+    }
+
+    /**
+     * Set provinceLatitude
+     *
+     * @param string $provinceLatitude
+     *
+     * @return CensusUser
+     */
+    public function setProvinceLatitude($provinceLatitude)
+    {
+        $this->provinceLatitude = $provinceLatitude;
+
+        return $this;
+    }
+
+    /**
+     * Get provinceLatitude
+     *
+     * @return string
+     */
+    public function getProvinceLatitude()
+    {
+        return $this->provinceLatitude;
+    }
+
+    /**
+     * Set provinceLongitude
+     *
+     * @param string $provinceLongitude
+     *
+     * @return CensusUser
+     */
+    public function setProvinceLongitude($provinceLongitude)
+    {
+        $this->provinceLongitude = $provinceLongitude;
+
+        return $this;
+    }
+
+    /**
+     * Get provinceLongitude
+     *
+     * @return string
+     */
+    public function getProvinceLongitude()
+    {
+        return $this->provinceLongitude;
+    }
 }
