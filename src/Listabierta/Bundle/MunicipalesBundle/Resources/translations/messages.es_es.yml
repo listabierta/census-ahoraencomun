@@ -8,7 +8,7 @@ census:
     html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
     h1_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
     verify_msg: Confirma el registro y las condiciones enviando desde tu móvil un SMS con la palabra ACEPTO al número %sms_inbound_number%, después haz clic en CONTINUAR
-    verify_extra: El coste del mensaje es de unos 10 céntimos de euro (o gratis, depende del coste de tu operadora) no es un sms premium y listabierta.org no cobra por este servicio.
+    verify_extra: El coste del mensaje es de unos 9 céntimos de euro (o gratis, depende del coste de tu operadora) no es un sms premium y listabierta.org no cobra por este servicio.
     
     step_conditions:
       html_title: Inscripción en el censo de la asamblea virtual de Ahora en Común
